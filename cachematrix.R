@@ -1,7 +1,6 @@
-## Put comments here that give an overall description of what your
-## functions do
+## These functions cache and return inverese matrices for given square matrices
 
-## Write a short comment describing this function
+## This function returns R object wrapping given matrix to contain also an inverse matrix
 
 makeCacheMatrix<-function(x=matrix()){
         i<-NULL
@@ -17,7 +16,8 @@ makeCacheMatrix<-function(x=matrix()){
              getinverse=getinverse)
 }
 
-## Write a short comment describing this function
+## cacheSolve function computes and returns inverse matrix for given one if inverse matrix was not computed yet
+## or returns cached inverse matrix 
 
 cacheSolve<-function(x,...){
         i <- x$getinverse()
